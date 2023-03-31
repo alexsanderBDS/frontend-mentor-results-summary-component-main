@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header flex-justified">
+        <h1 class="heading">Your Result</h1>
+        <div class="display flex-justified">
+          <p class="display-partial">76</p>
+          <p class="display-total">of 100</p>
+        </div>
+        <div class="response flex-justified">
+          <p class="response-heading">Great</p>
+          <p class="response-text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </header>
+      <article class="content">
+        <h2 class="sub-heading">Summary</h2>
+        <ul class="results">
+          <li class="result">
+            <img src="assets/images/icon-reaction.svg" alt="icon" width="20" />
+            <p>Reaction</p>
+            <p>80 / 100</p>
+          </li>
+          <li class="result">
+            <img src="assets/images/icon-memory.svg" alt="icon" width="20" />
+            <p>Memory</p>
+            <p>92 / 100</p>
+          </li>
+          <li class="result">
+            <img src="assets/images/icon-verbal.svg" alt="icon" width="20" />
+            <p>Verbal</p>
+            <p>61 / 100</p>
+          </li>
+          <li class="result">
+            <img src="assets/images/icon-visual.svg" alt="icon" width="20" />
+            <p>Visual</p>
+            <p>72 / 100</p>
+          </li>
+        </ul>
+        <button class="btn continue">Continue</button>
+      </article>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </main>
+  </body>
+</html>

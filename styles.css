@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  /* # SPACE SYSTEM */
+  /* ## TYPOGRAPHY - FONT SIZES */
+  --10px: calc(10rem / 16);
+  --12px: calc(12rem / 16);
+  --14px: calc(14rem / 16);
+  --16px: calc(16rem / 16);
+  --18px: calc(18rem / 16);
+  --20px: calc(20rem / 16);
+  --24px: calc(24rem / 16);
+  --36px: calc(36rem / 16);
+  --44px: calc(44rem / 16);
+  --52px: calc(52rem / 16);
+  --62px: calc(62rem / 16);
+  --74px: calc(74rem / 16);
+  --86px: calc(86rem / 16);
+  --98px: calc(98rem / 16);
+
+  /* ## WHITESPACE */
+  --2ws: calc(2rem / 16);
+  --4ws: calc(4rem / 16);
+  --8ws: calc(8rem / 16);
+  --12ws: calc(12rem / 16);
+  --16ws: calc(16rem / 16);
+  --24ws: calc(24rem / 16);
+  --32ws: calc(32rem / 16);
+  --48ws: calc(48rem / 16);
+  --64ws: calc(64rem / 16);
+  --80ws: calc(80rem / 16);
+  --96ws: calc(96rem / 16);
+  --128ws: calc(128rem / 16);
+
+  /* # COLORS */
+  /* ## Primary */
+  --color-plr: hsl(0, 100%, 67%);
+  --color-poy: hsl(39, 100%, 56%);
+  --color-pgt: hsl(166, 100%, 37%);
+  --color-pcb: hsl(234, 85%, 45%);
+  /* ## Gradients */
+  --color-glsb: hsl(252, 100%, 67%);
+  --color-glrb: hsl(241, 81%, 54%);
+  --color-gvb: hsla(256, 72%, 46%, 1);
+  --color-gpb: hsla(241, 72%, 46%, 0);
+  /* ## Neutral */
+  --color-nw: hsl(0, 0%, 100%);
+  --color-npb: hsl(221, 100%, 96%);
+  --color-nll: hsl(241, 100%, 89%);
+  --color-ndgb: hsl(224, 30%, 27%);
+}
+
+/* FRONTEND MENTOR STYLES */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* PROJECT STYLES */
+
+/* GENERAL */
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+body {
+  background-color: #000;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: var(--18px);
+  font-weight: 500;
+}
+
+.container {
+  background-color: var(--color-nw);
+  min-width: calc(375rem / 16);
+  max-width: calc(376rem / 16);
+  margin: auto;
+}
+
+.flex-justified {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GENERAL */
+
+/* STYLES */
+
+.header {
+  background-color: var(--color-glrb);
+  color: var(--color-nll);
+  gap: var(--16ws);
+  padding: var(--24ws) 0;
+}
+
+.heading {
+  font-size: var(--16px);
+}
+
+.display {
+  width: calc(150rem / 16);
+  border-radius: 50%;
+  padding: var(--32ws);
+  background: linear-gradient(
+    var(--color-gvb) 20%,
+    var(--color-glrb) 100%,
+    var(--color-glsb)
+  );
+}
+
+.display-partial {
+  font-size: var(--52px);
+  color: var(--color-nw);
+  font-weight: 800;
+}
+
+.display-total {
+  font-size: var(--16px);
+}
+
+.response {
+  gap: var(--8ws);
+}
+
+.response-heading {
+  color: var(--color-nw);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.response-text {
+  font-size: var(--14px);
+  margin: 0 var(--64ws);
+  text-align: center;
+}
