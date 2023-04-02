@@ -109,7 +109,18 @@ body {
 }
 
 .btn-neutral {
-  background-color: var(--color-ndgb);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-ndgb),
+    var(--color-ndgb)
+  );
+  color: var(--color-nw);
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+.btn-neutral:hover {
+  background: linear-gradient(to bottom, var(--color-glsb), var(--color-glrb));
   color: var(--color-nw);
 }
 
